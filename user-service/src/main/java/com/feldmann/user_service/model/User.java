@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +22,6 @@ public class User implements Serializable {
     private String name;
 
     private String email;
+
+    private List<Long> carIds = new ArrayList<>();
 }

@@ -1,7 +1,6 @@
 package com.feldmann.user_service.consumer;
 
 import com.feldmann.user_service.model.User;
-import com.feldmann.user_service.model.dto.UserDTO;
 import com.feldmann.user_service.repository.UserRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

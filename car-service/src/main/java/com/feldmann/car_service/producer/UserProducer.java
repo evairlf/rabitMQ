@@ -14,7 +14,9 @@ public class UserProducer {
     }
 
     public Map<String, Object> requestUserDetails(Long userId) {
-        return (Map<String, Object>) rabbitTemplate.convertSendAndReceive("user.queue", userId);
+        Object response = rabbitTemplate.convertSendAndReceive("user.queue", userId);
+        System.out.println("Received response: " + response);
+        return (Map<String, Object>) response;
     }
 
 }

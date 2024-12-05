@@ -93,5 +93,14 @@
 			</plugin>
 		</plugins>
 	</build>
+	<profiles>
+		<!-- Perfil de teste -->
+		<profile>
+			<id>test</id> <!-- Defina o id do perfil, ex: test -->
+			<properties>
+				<spring.profiles.active>test</spring.profiles.active> <!-- Configuração do perfil ativo -->
+			</properties>
+		</profile>
+	</profiles>
 
 </project>
